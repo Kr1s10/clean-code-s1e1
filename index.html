@@ -4,7 +4,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
-<body>
+<body class="body">
   <header class="header">
     <img class="matrix-img" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
     <a class="more-info-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
@@ -13,14 +13,14 @@
     <section class="adding-section">
       <h3 class="title">Add Item</h3>
       <div class="add-task-wrapper">
-        <input class="task-input add-task" type="text">
+        <input class="add-task-input" type="text">
         <button class="add-task-btn">Add</button>
       </div>
     </section>
     <section class="todo-section">
       <h3 class="title">Todo</h3>
       <ul class="todo-list">
-        <li class="todo-list__item">
+        <li class="todo-list-item" id="item">
           <input class="checkbox" type="checkbox">
           <label class="task-label">Pay Bills</label>
           <input class="task-input" type="text">
@@ -29,7 +29,7 @@
             <img class="remove-icon" src="./remove.svg" alt="Remove icon">
           </button>
         </li>
-        <li class="todo-list__item_edit">
+        <li class="todo-list-item" id="item">
           <input class="checkbox" type="checkbox">
           <label class="task-label">Go Shopping</label>
           <input class="task-input" type="text" value="Go Shopping">
@@ -43,7 +43,7 @@
     <section class="completed-section">
       <h3 class="title">Completed</h3>
       <ul class="completed-list">
-        <li class="completed-list__item">
+        <li class="completed-list-item" id="item">
           <input class="checkbox" type="checkbox" checked>
           <label class="task-label">See the Doctor</label>
           <input class="task-input" type="text">
