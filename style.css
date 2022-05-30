@@ -139,3 +139,19 @@
   transform: rotateZ(0);
 }
 
+/* Completed */
+.completed-list__item .task-label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Edit Task */
+.task-input,
+.task-label_edit {
+  display: none;
+}
+
+.task-input_edit {
+  display: inline-block;
+  width: 224px;
+}
